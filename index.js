@@ -1,4 +1,5 @@
 const app = require('express')();
+const port = process.env.PORT || 3000;
 
 app.set('views', './views');
 app.set('view engine', 'pug')
@@ -10,4 +11,4 @@ app.get('/', (req, res) => {
     })
 })
 
-app.listen('3000');
+app.listen(port);
